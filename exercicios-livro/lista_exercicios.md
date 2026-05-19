@@ -126,3 +126,111 @@ if média < 7:
 if média > 7:  
     print("Você passou de ano")
 ```
+
+# Capítulo 8
+
+### Exercício 8.1  
+
+Escreva uma função que retorne o maior de dois números.
+
+Valores esperados:
+
+    máximo(5, 6) == 6
+
+    máximo(2, 1) == 2
+
+    máximo(7, 7) == 7
+
+### Exercício 8.2  
+
+Escreva uma função que receba dois números e retorne True se o primeiro número for múltiplo do segundo.
+
+Valores esperados:
+
+    múltiplo(8, 4) == True
+
+    múltiplo(7, 3) == False
+
+    múltiplo(5, 5) == True
+
+### Exercício 8.3  
+
+Escreva uma função que receba o lado de um quadrado e retorne sua área (A = lado²).
+
+Valores esperados:
+
+    área_quadrado(4) == 16
+
+    área_quadrado(9) == 81
+
+### Exercício 8.4  
+
+Escreva uma função que receba a base e a altura de um triângulo e retorne sua área (A = (base × altura) / 2).
+
+Valores esperados:
+
+    área_triângulo(6, 9) == 27
+
+    área_triângulo(5, 8) == 20
+
+### Exercício 8.7  
+
+Defina uma função que calcule o maior divisor comum (M.D.C.) entre dois números a e b, em que a > b.
+
+$$
+
+mdc(a,b) =
+
+\begin{cases}
+
+a & b = 0 \\
+
+mdc(b, a - b \left\lfloor \frac{a}{b} \right\rfloor) & a > b
+
+\end{cases}
+
+$$
+
+Em que:
+
+$$
+
+a - b \left\lfloor \frac{a}{b} \right\rfloor
+
+$$
+
+pode ser escrito em Python como: `a % b`
+
+### Exercício 8.8  
+
+Usando a função mdc definida no exercício anterior, defina uma função para calcular o menor múltiplo comum (M.M.C.) entre dois números.
+
+$$
+
+mmc(a,b) =
+
+\frac{|a \times b|}{mdc(a,b)}
+
+$$
+
+Em que:
+
+$$
+
+|a \times b|
+
+$$
+
+pode ser escrito em Python como: `abs(a * b)`
+
+### Exercício 8.11  
+
+Escreva uma função para validar uma variável string. Essa função recebe como parâmetro a string, o número mínimo e máximo de caracteres. Retorne verdadeiro se o tamanho da string estiver entre os valores de máximo e mínimo, e falso, caso contrário.
+
+### Exercício 8.12  
+
+Escreva uma função que receba uma string e uma lista. A função deve comparar a string passada com os elementos da lista, também passada como parâmetro. Retorne verdadeiro se a string for encontrada dentro da lista, e falso, caso contrário.
+
+### Exercício 8.13  
+
+Escreva uma função que receba uma string com as opções válidas a aceitar (cada opção é uma letra). Converta as opções válidas para letras minúsculas. Utilize input para ler uma opção, converter o valor para letras minúsculas e verificar se a opção é válida. Em caso de opção inválida, a função deve pedir ao usuário que digite novamente outra opção.
